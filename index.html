@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel=stylesheet href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Miriam+Libre&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div id="alertText">
+            <h2>Sistema de Login e Senha</h2>
+            <h3>Crie uma conta para acessar o banco de dados.</h3>
+        </div>
+        <section id="registerBox">
+
+        <div id="registerSection">
+            <span id="nameTop">Nome:</span>
+            <input id="name" placeholder="Nome">
+            <span>Data de Nascimento:</span>
+                <input class="line" type="date"id="born">
+            <span>Gênero:</span>
+                <select class="line" id="gender">
+                    <option value="" selected>Selecione</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="naoBinario">Não-binário</option>
+                    <option value="outro">Outro / Prefiro não informar</option>
+                </select>
+            <span>E-mail:</span>
+            <input type="email" id="email" placeholder="E-mail">
+            <span>Senha:</span>
+            <input type="password"id="password" placeholder="Senha">
+            <button id="buttonConfirm">Criar conta</button>
+        </div>    
+        </section>
+        <section id="devSection">
+            <span>Opções de desenvolvedor:</span>
+            <button>Acessar sem login</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
